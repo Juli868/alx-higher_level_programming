@@ -10,12 +10,12 @@ if (__name__ == '__main__'):
         second = int(sys.argv[3])
         operator = sys.argv[2]
         if (operator == '+'):
-            print('{} {} {} = {}'.format(first, operator, second, add(first, second)))
+            print('{} + {} = {}'.format(first, second, add(first, second)))
         elif(operator == '-'):
-            print('{} {} {} = {}'.format(first, operator, second, sub(first, second)))
+            print('{} - {} = {}'.format(first, second, sub(first, second)))
         elif(operator == '*'):
-            print('{} {} {} = {}'.format(first, operator, second, mul(first, second)))
+            print('{} * {} = {}'.format(first, second, mul(first, second)))
         elif(operator == '/'):
-            print('{} {} {} = {}'.format(first, operator, second, div(first, second)))
+            print('{} / {} = {}'.format(first, second, div(first, second)))
         else:
             print("Unknown operator. Available operators: +, -, * and /")
