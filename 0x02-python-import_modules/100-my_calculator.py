@@ -6,16 +6,16 @@ if (__name__ == '__main__'):
     if (arguments != 4):
         print("Usage: ./100-my_calculator.py <a> <operator> <b>")
     else:
-        first = int(sys.argv[1])
-        second = int(sys.argv[3])
+        fir = int(sys.argv[1])
+        sec = int(sys.argv[3])
         operator = sys.argv[2]
         if (operator == '+'):
-            print('{} + {} = {}'.format(first, second, add(first, second)))
+            print('{} {} {} = {}'.format(fir, operator, sec, add(fir, sec)))
         elif(operator == '-'):
-            print('{} - {} = {}'.format(first, second, sub(first, second)))
-        elif(operator == '*'):
-            print('{} * {} = {}'.format(first, second, mul(first, second)))
+            print('{} {} {} = {}'.format(fir, operator, sec, sub(fir, sec)))
+        elif(operator == "*"):
+            print('{} {} {} = {}'.format(fir, operator, sec, mul(fir, sec)))
         elif(operator == '/'):
-            print('{} / {} = {}'.format(first, second, div(first, second)))
+            print('{} {} {} = {}'.format(fir, operator, second, div(fir, sec)))
         else:
             print("Unknown operator. Available operators: +, -, * and /")
