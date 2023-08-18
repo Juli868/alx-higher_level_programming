@@ -4,4 +4,4 @@ def multiple_returns(sentence):
     if (len(sentence) != 0):
         answer[0] = len(sentence)
         answer[1] = sentence[0]
-    return(tuple(answer))
+    return (tuple(answer))
