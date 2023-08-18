@@ -9,4 +9,4 @@ def add_tuple(tuple_a=(), tuple_b=()):
         cp_2.append(0)
     for counter in range(0,2):
             new_t[counter] = cp_1[counter] + cp_2[counter]
-    return (new_t)
+    return (tuple(new_t))
