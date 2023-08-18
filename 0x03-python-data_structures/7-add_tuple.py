@@ -7,6 +7,6 @@ def add_tuple(tuple_a=(), tuple_b=()):
         cp_1.append(0)
     while (len(cp_2) <= 2):
         cp_2.append(0)
-    for counter in range(0,2):
-            new_t[counter] = cp_1[counter] + cp_2[counter]
+    for counter in range(0, 2):
+        new_t[counter] = cp_1[counter] + cp_2[counter]
     return (tuple(new_t))
