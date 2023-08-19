@@ -3,6 +3,7 @@ if (__name__ == '__main__'):
     from calculator_1 import add, sub, div, mul
     import sys
     arguments = len(sys.argv)
+    error = "Unknown operator. Available operators: +, -, * and /\n"
     if (arguments != 4):
         print("Usage: ./100-my_calculator.py <a> <operator> <b>")
     else:
@@ -18,4 +19,4 @@ if (__name__ == '__main__'):
         elif (operator == '/'):
             print('{} {} {} = {}'.format(fir, operator, sec, div(fir, sec)))
         else:
-            sys.stderr.write("Unknown operator. Available operators: +, -, * and /")
+            sys.stderr.write(error)
