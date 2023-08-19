@@ -18,4 +18,4 @@ if (__name__ == '__main__'):
         elif (operator == '/'):
             print('{} {} {} = {}'.format(fir, operator, sec, div(fir, sec)))
         else:
-            print("Unknown operator. Available operators: +, -, * and /")
+            sys.stderr.write("Unknown operator. Available operators: +, -, * and /")
