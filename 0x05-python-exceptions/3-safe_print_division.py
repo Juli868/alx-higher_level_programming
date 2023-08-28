@@ -6,4 +6,5 @@ def safe_print_division(a, b):
     except (UnboundLocalError,ZeroDivisionError):
         return None
     finally:
+        print ("Inside Result: {}".format(c))
         return c
