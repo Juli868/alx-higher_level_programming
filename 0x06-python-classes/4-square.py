@@ -8,11 +8,11 @@ class Square:
     def __init__(self, size=0):
         """Define the objects."""
         self.__size = size
-
+    @property
     def size(self):
         """Searchiong for an object in class."""
         return(self.__size)
-
+    @size.setter
     def size(self, value):
         """Set the object."""
         if not isinstance(value, int):
@@ -20,7 +20,7 @@ class Square:
         elif (value < 0):
             raise ValueError("size must be >= 0")
         self.__size = value
-
+    
     def area(self):
         """Calculate the area."""
         return (self.__size * self.__size)
