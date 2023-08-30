@@ -1,5 +1,5 @@
 #!/usr/bin/python3
-"""Create a new class."""
+"""create a class named square."""
 
 
 class Square:
@@ -26,3 +26,13 @@ class Square:
     def area(self):
         """Calculate the area."""
         return (self.__size * self.__size)
+
+    def my_print(self):
+        """Print a square."""
+        if (self.__size == 0):
+            print("")
+        else:
+            for counter_1 in range(0, self.__size):
+                for counter_2 in range(0, self.__size):
+                    print("#", end='')
+                print("")
