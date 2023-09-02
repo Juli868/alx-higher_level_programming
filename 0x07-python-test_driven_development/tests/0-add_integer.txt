@@ -1,0 +1,5 @@
+the required values of the program are:
+* sum of two numbers to mean:
+1. numbers should be in or float
+2. provided two numbers
+3. return a sum
