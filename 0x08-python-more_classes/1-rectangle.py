@@ -32,6 +32,7 @@ class Rectangle:
         if (value < 0):
             raise ValueError("heigth must be >= 0")
         self.__height = value
+
     def __init__(self, width=0, height=0):
         """Definition of the attributes."""
         self.__height = height
