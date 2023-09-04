@@ -61,6 +61,6 @@ class Rectangle:
 
     def __repr__(self):
         """Printable representaion."""
-        repres = "Rectangle(" + str(self.__width)
-        repres += ", " + str(self.__height) + ")"
+        repres = "Rectangle(" + (self.__width)
+        repres += ", " + (self.__height) + ")"
         return repres
