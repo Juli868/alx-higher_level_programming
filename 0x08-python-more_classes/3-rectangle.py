@@ -58,9 +58,3 @@ class Rectangle:
                 represent.append("#")
             represent.append('\n')
         return ("".join(represent))
-
-    def __repr__(self):
-        """Printable representaion."""
-        repres = "Rectangle(" + str(self.__width)
-        repres += ", " + str(self.__height) + ")"
-        return repres
