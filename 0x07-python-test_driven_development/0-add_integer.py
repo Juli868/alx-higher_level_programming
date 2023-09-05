@@ -3,7 +3,13 @@
 
 
 def add_integer(a, b=98):
-    """Describe function details."""
+    """
+    add_integer: adds tw numbers.
+
+    :param a: first number.
+    :param b: secnd number.
+    :return: the sum.
+    """
     if not ((type(a) is int) or (type(a) is float)):
         raise TypeError("a must be an integer")
     elif not (type(b) is int or type(b) is float):
@@ -12,4 +18,4 @@ def add_integer(a, b=98):
         a = int(a)
     if type(b) is float:
         b = int(b)
-    return(a + b)
+    return (a + b)

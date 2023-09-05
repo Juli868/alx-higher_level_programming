@@ -1,5 +1,28 @@
-the required values of the program are:
+"""the required values of the program are:
 * sum of two numbers to mean:
 1. numbers should be in or float
 2. provided two numbers
 3. return a sum
+"""
+>>> add = __import__('0-add_integer').add_integer
+
+>>> add('-5',5)
+Traceback (most recent call last):
+ ...
+TypeError: a must be an integer
+>>> add(7,'hello')
+Traceback (most recent call last):
+ ...
+TypeError: b must be an integer
+>>> add(100.3, -2)
+98
+>>> add(None)
+Traceback (most recent call last):
+ ...
+TypeError: a must be an integer
+>>> add(2)
+100
+>>> add(100, -2)
+98
+>>> add(1,2)
+3
