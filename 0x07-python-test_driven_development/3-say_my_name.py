@@ -1,5 +1,13 @@
 #!/usr/bin/python3
+"""Define the name."""
+
+
 def say_my_name(first_name, last_name=""):
+    """Say_my_name - prints the fu name given to it.
+
+    first_name: first name
+    second_name: second name
+    """
     if not isinstance(first_name, str):
         raise TypeError("first_name must be a string")
     if not isinstance(last_name, str):
