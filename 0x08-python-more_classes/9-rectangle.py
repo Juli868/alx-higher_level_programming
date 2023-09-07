@@ -76,3 +76,18 @@ class Rectangle:
         print("Bye rectangle...")
         self.__width = None
         self.__height = None
+
+    def bigger_or_equal(rect_1, rect_2):
+        """Bigger_or_equal - determines the biggest among the rectangles.
+
+        :param rect_1: first Rectangle
+        :param rect_2: second Rectangle
+        Return: rect_2 if it is the biggest else the rect_1
+        """
+        if not isinstance(rect_1, Rectangle):
+            raise TypeError("rect_1 must be an instance of Rectangle")
+        if not isinstance(rect_2, Rectangle):
+            raise TypeError("rect_2 must be an instance of Rectangle")
+        if (Rectangle.area(rect_1) < Rectangle.area(rect_2)):
+            return rect_2
+        return rect_1
