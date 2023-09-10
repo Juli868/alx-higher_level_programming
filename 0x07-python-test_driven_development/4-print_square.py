@@ -3,7 +3,7 @@
 
 
 def print_square(size):
-    """Print_square - shows string formation of a square
+    """Print_square - shows string formation of a square.
 
     :param size: size of the square.
     """
