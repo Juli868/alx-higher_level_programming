@@ -1,7 +1,9 @@
 #!/usr/bin/python3
 class MyList(list):
-    list_t = super.__init__
     def print_sorted(self):
-        new_list = sorted(list_t)
-        return (new_list)
+        new_list = self[:]
+        for i in range (len(new_list)):
+            if not isinstance(new_list[i], int):
+                raise TypeError("Element must be int")
+        print(sorted(new_list))
 
