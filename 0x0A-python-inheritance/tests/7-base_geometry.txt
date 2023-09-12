@@ -1,0 +1,11 @@
+>>> new = __import__('7-base_geometry').BaseGeometry()
+>>> new.area()
+Traceback (most recent call last):
+...
+Exception: area() is not implemeted
+>>> new.integer_validator('Julias', 45)
+>>> new.integer_validator(45,90)
+Traceback (most recent call last):
+...
+TypeError: name must be a string
+
