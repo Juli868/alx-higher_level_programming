@@ -8,7 +8,9 @@ class BaseGeometry:
     def area(self):
         """Area calculation."""
         raise Exception("area() is not implemeted")
+
     def integer_validator(self, name, value):
+        """Set value to the attributes."""
         if not isinstance(name, str):
             raise TypeError("name must be a string")
         if not isinstance(value, int):
