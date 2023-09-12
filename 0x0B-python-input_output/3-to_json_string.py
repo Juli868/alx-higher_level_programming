@@ -9,4 +9,4 @@ def to_json_string(myobj):
     @param myobj: string to work on
     Return: the json representation
     """
-    return (json.loads(myobj))
+    return (json.dumps(myobj))
