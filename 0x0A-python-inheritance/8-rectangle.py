@@ -20,5 +20,8 @@ class BaseGeometry:
 
 
 class Rectangle(BaseGeometry):
+    """Definitin of a new class."""
+
     def __init__(self, width, height):
+        """Initialize attributes."""
         Rectangle.integer_validator
