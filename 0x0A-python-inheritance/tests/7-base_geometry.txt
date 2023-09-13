@@ -4,3 +4,8 @@ Traceback (most recent call last):
 ...
 Exception: area() is not implemented
 >>> new.integer_validator('Julias', 45)
+>>> new.integer_validator(45,90)
+Traceback (most recent call last):
+...
+TypeError: name must be a string
+
