@@ -16,4 +16,4 @@ class Base:
             self.id = Base.__nb_objects
 
     def load_from_file(cls):
-        return (self.__nb_objects)
+        return (self.id)
