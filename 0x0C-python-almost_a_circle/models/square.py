@@ -2,8 +2,8 @@
 """create a new class."""
 
 
-from rectangle import Rectangle
-from base import Base
+from models.rectangle import Rectangle
+from models.base import Base
 
 
 class Square(Rectangle):
@@ -14,6 +14,8 @@ class Square(Rectangle):
 
         :param size: size of the square.
         """
-        super.__init__()
-        self.__height = size
-        self.__width = size
+        super().__init__(size, size, x, y, id)
+
+    def __str__(self):
+        """Represent our object as a string."""
+        return(f"[Square] ({self.id}) {self.x}/{self.y} - {self.height}")

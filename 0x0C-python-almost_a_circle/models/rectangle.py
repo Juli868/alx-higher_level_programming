@@ -17,7 +17,7 @@ class Rectangle(Base):
         if not isinstance(value, int):
             raise TypeError("width must be an integer")
         if (value < 0):
-            raise ValueError("width must be >= 0")
+            raise ValueError("width must be > 0")
         self.__width = value
 
     @property
@@ -31,7 +31,7 @@ class Rectangle(Base):
         if not isinstance(value, int):
             raise TypeError("height must be an integer")
         if (value < 0):
-            raise ValueError("height must be >= 0")
+            raise ValueError("height must be > 0")
         self.__height = value
 
     @property
@@ -81,23 +81,17 @@ class Rectangle(Base):
         """Calculate the area."""
         return (self.__width * self.__height)
 
-    def display(self):
-        """Print the rectangle."""
-        for i in range(self.__height):
-            for countuter in range(self.width):
-                print('#', end='')
-            print('')
-
     def __str__(self):
         """Represent object as a string."""
         first = (f"[Rectangle] ({self.id}) {self.__x}/{self.__y} - ")
         second = (f"{self.__width}/{self.__height}")
         return (first + second)
+
     def display(self):
         """Print the rectangle considering the x and y."""
-        [print("") for i in range(0, self.__x)]
+        [print("") for i in range(0, self.__y)]
         for counter_1 in range(0, self.__height):
-            [print(" ", end='')for i in range(0, self.__y)]
+            [print(" ", end='')for i in range(0, self.__x)]
             [print("#", end='') for j in range(0, self.__width)]
             print("")
 
@@ -106,7 +100,7 @@ class Rectangle(Base):
         for i in range(len(args)):
             if i == 0:
                 self.id = args[i]
-            elif i ==1:
+            elif i == 1:
                 self.__width = args[i]
             elif i == 2:
                 self.__height = args[i]
