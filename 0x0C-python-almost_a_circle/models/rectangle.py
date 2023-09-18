@@ -87,5 +87,9 @@ class Rectangle(Base):
             for countuter in range(self.width):
                 print('#', end='')
             print('')
+
     def __str__(self):
-        return (f"[Rectangle] ({self.id}) {self.__x}/{self.__y} - {self.__width}/{self.__height}")
+        """Represent object as a string."""
+        first = (f"[Rectangle] ({self.id}) {self.__x}/{self.__y} - ")
+        second = (f"{self.__width}/{self.__height}")
+        return (first + second)
