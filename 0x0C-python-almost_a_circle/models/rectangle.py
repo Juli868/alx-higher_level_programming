@@ -94,12 +94,15 @@ class Rectangle(Base):
         second = (f"{self.__width}/{self.__height}")
         return (first + second)
     def display(self):
+        """Print the rectangle considering the x and y."""
         [print("") for i in range(0, self.__x)]
         for counter_1 in range(0, self.__height):
             [print(" ", end='')for i in range(0, self.__y)]
             [print("#", end='') for j in range(0, self.__width)]
             print("")
+
     def update(self, *args):
+        """Update the attributes."""
         for i in range(len(args)):
             if i == 0:
                 self.id = args[i]

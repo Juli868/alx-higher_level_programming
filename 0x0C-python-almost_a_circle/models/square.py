@@ -8,8 +8,10 @@ from base import Base
 
 class Square(Rectangle):
     """Define a class that inherits Rectangle."""
+
     def __init__(self, size, x=0, y=0, id=None):
         """Initialize the attributes.
+
         :param size: size of the square.
         """
         super.__init__()
