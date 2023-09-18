@@ -16,4 +16,5 @@ class Base:
             self.id = Base.__nb_objects
 
     def load_from_file(cls):
+        """Determine the number of instances created."""
         return (self.id)
