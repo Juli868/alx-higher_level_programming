@@ -93,3 +93,21 @@ class Rectangle(Base):
         first = (f"[Rectangle] ({self.id}) {self.__x}/{self.__y} - ")
         second = (f"{self.__width}/{self.__height}")
         return (first + second)
+    def display(self):
+        [print("") for i in range(0, self.__x)]
+        for counter_1 in range(0, self.__height):
+            [print(" ", end='')for i in range(0, self.__y)]
+            [print("#", end='') for j in range(0, self.__width)]
+            print("")
+    def update(self, *args):
+        for i in range(len(args)):
+            if i == 0:
+                self.id = args[i]
+            elif i ==1:
+                self.__width = args[i]
+            elif i == 2:
+                self.__height = args[i]
+            elif i == 3:
+                self.__x = args[i]
+            elif i == 4:
+                self.__y = args[i]
