@@ -1,1 +1,2 @@
-SHOW databases;
+--listin' all databases
+SHOW DATABASES;
