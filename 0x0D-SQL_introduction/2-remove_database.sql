@@ -1,2 +1,2 @@
---Deleting a database
-DELETE database hbtn_0c_0
+-- Deleting a database
+DELETE DATABASE hbtn_0c_0
