@@ -1,2 +1,2 @@
 -- Listing all records
-LIST * from first_table;
+LIST * FROM first_table;
