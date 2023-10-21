@@ -1,2 +1,2 @@
 -- Listing all but ordered
-SELECT score, name FROM second_table ORDER BY score ASC;
+SELECT score, name FROM second_table ORDER BY second_table.score ASC;
