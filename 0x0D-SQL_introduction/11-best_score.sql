@@ -1,2 +1,2 @@
 -- Listing records with score >= 10
-SELECT * WHERE (score>=10) ORDER BY score ASC;
+SELECT score, name WHERE (score>=10) ORDER BY score ASC;
