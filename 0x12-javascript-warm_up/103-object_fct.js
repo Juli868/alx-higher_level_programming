@@ -4,10 +4,9 @@ const myObject = {
   value: 12
 };
 console.log(myObject);
-function incr() {
-    this.value++;
-}
-const boundIncr = incr.bind(myObject);
+myObject.incr = function () {
+  this.value++;
+};
 myObject.incr();
 console.log(myObject);
 myObject.incr();
