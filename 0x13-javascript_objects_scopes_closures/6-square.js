@@ -9,7 +9,7 @@ class Square extends Rectangle {
 
   charPrint (c) {
     if (c !== undefined) {
-      this.use = 'c';
+      this.use = c;
     } else {
       this.use = 'X';
     }
