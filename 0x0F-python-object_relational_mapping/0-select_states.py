@@ -7,5 +7,7 @@ if __name__ == '__main__':
     print(conn)
     cursor = conn.cursor()
     cursor.execute('SELECT * FROM states')
-    print(cursor.fetchall())
+    result = cursor.fetchall()
+    for part in result:
+        print(part)
     conn.close
