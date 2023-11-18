@@ -6,7 +6,7 @@ if __name__ == '__main__':
     import MySQLdb as db
     import sys
     conn = db.connect(
-            host='localhost', user=sys.argv[1],
+            host='localhost', user=sys.argv[1], port=3306,
             password=sys.argv[2], database=sys.argv[3])
     cursor = conn.cursor()
     cursor.execute('SELECT * FROM states')
