@@ -1,5 +1,7 @@
 #!/usr/bin/python3
 """Script to print all info in a table named states."""
+
+
 if __name__ == '__main__':
     import MySQLdb as db
     import sys
@@ -11,4 +13,4 @@ if __name__ == '__main__':
     result = cursor.fetchall()
     for part in result:
         print(part)
-    conn.close
+    conn.close()
