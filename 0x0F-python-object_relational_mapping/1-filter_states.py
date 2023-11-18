@@ -1,5 +1,5 @@
 #!/usr/bin/python3
-"""Script to print all states wtih an N on the beginning of  states."""
+"""Print all states wtih an N on the beginning of  states."""
 
 
 if __name__ == '__main__':
