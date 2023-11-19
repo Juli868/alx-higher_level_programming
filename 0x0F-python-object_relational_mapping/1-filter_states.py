@@ -1,7 +1,5 @@
 #!/usr/bin/python3
 """Print all states wtih an N on the beginning of  states."""
-
-
 if __name__ == '__main__':
     import MySQLdb as db
     import sys
