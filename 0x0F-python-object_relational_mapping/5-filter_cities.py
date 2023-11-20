@@ -12,5 +12,5 @@ if __name__ == '__main__':
             WHERE states.name=%s ORDER BY cities.id ASC""", (sys.argv[4],))
     result = cursor.fetchall()
     tmp = [row[0] for row in result]
-    print(*tmp, sep=',')
+    print(*tmp, sep=', ')
     conn.close()
