@@ -10,7 +10,7 @@ file.readFile(process.argv[2], 'utf8', (err, data) => {
       console.error(err);
     }
     const second = data;
-    const combined = first + '\n' + second;
+    const combined = first + second;
     file.writeFile(process.argv[4], combined, err => {
       if (err) {
         console.error(err);
