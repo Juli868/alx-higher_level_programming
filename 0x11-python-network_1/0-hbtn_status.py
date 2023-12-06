@@ -1,4 +1,5 @@
 #!/usr/bin/python3
+"""Get the web."""
 import urllib
 if __name__ == "__main__":
     request = urllib.request.Request("https://alx-intranet.hbtn.io/status")
